@@ -1,30 +1,39 @@
-✅ Todo List App
+# 🌟 Advanced Todo List App
 
-A simple and clean To-Do List Web Application built with HTML, CSS, and JavaScript.
-This app allows users to add, edit, and delete tasks with a smooth and minimal interface.
+A modern, stylish, and fully interactive **Todo List Application** with:
 
-📌 Features
-✔ Add Tasks
+✔ LocalStorage (tasks saved permanently)  
+✔ Dark / Light Mode  
+✔ Editable tasks  
+✔ Deletable tasks  
+✔ Task completion toggle  
+✔ Animations  
+✔ Google Material Icons  
+✔ Fully responsive UI  
+✔ Clean commented code  
 
-Users can input a task and press Submit to add it to their to-do list.
+---
 
-✏ Edit Tasks
+## 🚀 Features
 
-Each task includes an Edit button that lets users update the text using a popup prompt.
+### ✔ Add Tasks  
+Input a task and click **Add Task**.
 
-❌ Delete Tasks
+### ✔ Edit Tasks  
+Click the **edit icon** to modify your task.
 
-Tasks can be removed instantly using the Delete button.
+### ✔ Delete Tasks  
+Click the **delete icon** to remove a task.
 
-🎨 Clean UI with Custom Styling
+### ✔ Mark Completed  
+Click the task text to toggle completion ✓
 
-CSS variables are used for consistent colors, spacing, and responsive layout.
-The UI is fully responsive and simple to understand.
+### ✔ Dark / Light Mode  
+One-click theme switch — automatically saved.
 
-📁 Organized Code Structure
+### ✔ Saved Locally  
+Everything is stored in **localStorage**.
 
-index.html – Main HTML structure
+---
 
-styles.css – All custom styles
-
-script.js – Logic for adding, editing, and deleting tasks
+## 📁 Project Structure
