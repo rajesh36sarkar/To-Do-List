@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo List App</title>
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="mainSection">
+
+    <!-- Header + Theme Switch -->
+    <header>
+      <h2>TO-DO LIST</h2>
+      <button id="themeToggle" title="Toggle Theme">
+        <span class="material-icons">dark_mode</span>
+      </button>
+    </header>
+
+    <!-- Input Section -->
+    <div id="inputSection">
+      <input type="text" id="input" placeholder="Enter your task..." />
+      <button id="addBtn" type="button">Add Task</button>
+    </div>
+
+    <!-- View Section -->
+    <div id="viewSection">
+      <ul id="viewList"></ul>
+    </div>
+
+  </div>
+
+  <!-- App Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

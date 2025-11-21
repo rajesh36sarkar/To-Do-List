@@ -1,0 +1,192 @@
+/* -----------------------------------
+   CSS VARIABLES (LIGHT + DARK MODE)
+-----------------------------------*/
+:root {
+  --bg-main: #d5e8e7;
+  --bg-card: #ffffff;
+  --text-color: #222;
+  --border-color: #000;
+
+  --accent: #4caf50;
+  --accent-hover: #45a049;
+
+  --delete: #e53935;
+  --delete-hover: #c62828;
+
+  --pad-sm: 6px;
+  --pad-md: 10px;
+  --pad-lg: 15px;
+
+  --radius: 6px;
+
+  --font-main: Arial, sans-serif;
+  --shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+  --transition: 0.25s ease;
+}
+
+/* DARK MODE */
+body.dark {
+  --bg-main: #1d1f21;
+  --bg-card: #2b2e31;
+  --text-color: #f2f2f2;
+  --border-color: #666;
+}
+
+/* -----------------------------
+    GLOBAL RESET
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  min-height: 100vh;
+  padding: 20px;
+  background: var(--bg-main);
+}
+
+/* ----------------------------
+   MAIN SECTION
+---------------------------- */
+
+#mainSection {
+  height: auto;
+  width: 100%;
+  max-width: 750px;        
+  margin: 80px auto;     
+  
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: var(--pad-lg);
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--pad-lg);
+}
+
+/* ----------------------------
+   HEADER + THEME BUTTON
+---------------------------- */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#themeToggle {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: var(--pad-sm);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#themeToggle:hover {
+  background: #ccc;
+}
+
+/* ----------------------------
+   INPUT SECTION
+---------------------------- */
+#inputSection {
+  display: flex;
+  gap: var(--pad-md);
+  width: 100%;
+}
+
+#inputSection input {
+  flex: 1;
+  padding: var(--pad-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+#addBtn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: var(--pad-md) var(--pad-lg);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#addBtn:hover {
+  background: var(--accent-hover);
+}
+
+/* ----------------------------
+   VIEW SECTION & TASKS
+---------------------------- */
+#viewSection {
+  flex: 1;
+  overflow-y: auto;
+  border: 2px solid var(--border-color);
+  padding: var(--pad-lg);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+
+#viewList {
+  list-style: none;
+}
+
+#viewList li {
+  padding: var(--pad-md);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  gap: var(--pad-md);
+  transition: var(--transition);
+}
+
+#viewList li:hover {
+  transform: scale(1.02);
+}
+
+/* Task completed style */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Buttons */
+.iconBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.editBtn {
+  color: var(--accent);
+}
+
+.editBtn:hover {
+  color: var(--accent-hover);
+}
+
+.deleteBtn {
+  color: var(--delete);
+}
+
+.deleteBtn:hover {
+  color: var(--delete-hover);
+}
